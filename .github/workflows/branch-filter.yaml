@@ -1,0 +1,10 @@
+name: Branch-filter
+on:
+  push:
+    branches:
+      - main
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Main branch only"
