@@ -1,0 +1,12 @@
+name: env-var
+on: [push]
+
+jobs:
+  env:
+    runs-on: ubuntu-latest
+    env:
+      APP: demo
+    steps:
+      - run: echo $APP
+
+  

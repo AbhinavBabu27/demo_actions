@@ -1,0 +1,13 @@
+name: multi-job1
+on: [push]
+jobs:
+  buildfirst:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "build"
+  
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Test"
