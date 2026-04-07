@@ -1,1 +1,2 @@
-console.log("Node js running...")
+console.log("Node cli running");
+console.log("Done")
