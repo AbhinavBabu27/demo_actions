@@ -10,5 +10,6 @@ jobs:
           path: ~/.npm
           key: cache-${{ hashFiles('package-lock.json') }}
       - run: npm install
+        working-directory: node-app
 
   
