@@ -1,0 +1,13 @@
+name: 26-Fail-Fast
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        node: [16, 18]
+    steps:
+      - name: Simulate test
+        run: echo "Testing Node ${{ matrix.node }}"

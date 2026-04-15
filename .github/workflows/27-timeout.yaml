@@ -1,0 +1,10 @@
+name: 27-Timeout
+on: [push]
+
+jobs:
+  timeout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Sleep safely
+        run: sleep 30

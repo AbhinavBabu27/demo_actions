@@ -1,0 +1,11 @@
+name: 29-Custom
+on: [push]
+
+jobs:
+  script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run GitHub Script
+        uses: actions/github-script@v7
+        with:
+          script: console.log("Hello from custom action");
