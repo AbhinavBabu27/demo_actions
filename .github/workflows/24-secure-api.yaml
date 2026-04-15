@@ -5,4 +5,4 @@ jobs:
   secure:
     runs-on: ubuntu-latest
     steps:
-      - run: curl -H "Authorization: Bearer ${{ secrets.TOKEN }}" https://example.com
+      - run: curl -I -H "Authorization: Bearer ${{ secrets.TOKEN }}" https://example.com
