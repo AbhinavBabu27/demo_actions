@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: npm install
+        working-directory: node-app
       - run: npm run build
         working-directory: node-app
   test:
